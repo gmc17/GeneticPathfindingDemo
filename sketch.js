@@ -5,7 +5,7 @@ let populationThetas = [];
 let fitnesses = [];
 let fitnessesArray = [];
 
-let startPositionX = 250;
+let startPositionX = 100;
 let startPositionY = 250;
 
 let desiredPositionX = 700;
@@ -228,9 +228,9 @@ function setup() {
   //randomize obstacle characteristics
 
   for (let i=0; i<numOfObstacles; i++) {
-    obstacleRadii[i]=Math.random()*50+5;
-    obstacleX[i]=Math.random()*width;
-    obstacleY[i]=Math.random()*height+200;
+    obstacleRadii[i]=Math.random()*50+10;
+    obstacleX[i]=Math.random()*(width-170)+150;
+    obstacleY[i]=Math.random()*(height-220)+200;
   }
 
   //create obstacle object array
@@ -283,7 +283,7 @@ function reset() {
   fitnesses = [];
   fitnessesArray = [];
 
-  startPositionX = 250;
+  startPositionX = 100;
   startPositionY = 250;
 
   desiredPositionX = 700;
