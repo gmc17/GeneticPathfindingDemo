@@ -131,7 +131,7 @@ function getFitness(x, y, hasTouchedObstacle, hasTouchedGoal) {
   if (hasTouchedGoal) {
     distance/=10;
   }
-  return 1000000/(distance*distance+goalRadius);
+  return 1000000/(Math.exp(distance/100)+goalRadius);
 }
 
 function chooseFitMember() {
@@ -291,8 +291,8 @@ function reset() {
   goalRadius = 40;
   totalGenerations = 1;
 
-  numOfMovements = 25; 
-  framesPerTheta = 18;
+  numOfMovements = 8;
+  framesPerTheta = 60;
   speed = 1;
 
   frameNum = 0;
