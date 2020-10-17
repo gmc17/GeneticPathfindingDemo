@@ -358,7 +358,7 @@ function draw() {
   let indexOfBestFitness = calculateBestScorer();
   textFont('Courier');
   textSize(30);
-  text("Best Scorer: " + Math.floor(getFitness(birds[indexOfBestFitness].posX, birds[indexOfBestFitness].posY, birds[indexOfBestFitness].hasTouchedObstacle, birds[indexOfBestFitness].hasTouchedGoal)), 10, 40);
+  text("Best Scorer: " + Math.floor(Math.log(getFitness(birds[indexOfBestFitness].posX, birds[indexOfBestFitness].posY, birds[indexOfBestFitness].hasTouchedObstacle, birds[indexOfBestFitness].hasTouchedGoal))), 10, 40);
   textSize(12);
   textSize(20);
   text("Generation: " + totalGenerations + "  Mutation Rate: " + 100*mutationRate + "%" + "  Average fitness: " + Math.floor(averageFitness), 10, 76);
