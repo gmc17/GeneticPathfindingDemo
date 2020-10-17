@@ -1,0 +1,22 @@
+html, body {
+  margin: 10;
+  padding: 10;
+}
+
+input {
+  width: 325px;
+  padding: 5px 10px;
+  margin: 3px 0;
+  box-sizing: border-box;
+}
+
+button {
+  width: 160.5px;
+  padding: 5px 20px;
+  margin: 3px 0;
+  box-sizing: border-box;
+}
+
+canvas {
+  display: block;
+}

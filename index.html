@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <script src="sketch.js"></script>
+    <div>
+    <input style="font-family:'Courier New'" class="button" type="number" name="numOfMovements" id="numOfMovements" placeholder="# of changes in direction per object"><br>
+    <input style="font-family:'Courier New'" class="button" type="number" name="popSize" id="popSize" placeholder="# of objects per generation"><br>
+    <input style="font-family:'Courier New'" class="button" type="number" name="mutationRate" id="mutationRate" placeholder="Mutation rate in %"><br>
+    <input style="font-family:'Courier New'" class="button" type="number" name="speed" id="speed" placeholder="Speed factor"><br>
+    <button style="font-family:'Courier New'" onclick=restart()>Update</button>
+    <button style="font-family:'Courier New'" onclick=reset()>Reset</button>
+    </div>
+  </body>
+</html>
